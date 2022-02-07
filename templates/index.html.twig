@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% block nav %}
+        {{ include('header.html.twig') }}
+    {% endblock nav %}
+                  <!-- INICIO DE VIDEO-->
+                  <div class="video">
+                    <video autoplay muted loop>
+                        <source src="./video/VideoNormandie.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <!-- INICIO DE CONTEUDO PRINCIPAL -->
+                  <main>
+                      <!-- INICIO BLOCO ICONES-->
+                      <br>
+                      <h3> Porquoi reserver avec visite normandie </h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <center>
+                                <i class="bi bi-app-indicator"></i>
+                                <h4> Une flexibilite totale</h4>
+                                <blockquote>
+                                    Lorem ipsum adksakdksadkaskdsa
+                                    Lorem ipsum adksakdksadkaskdsa
+                                    Lorem ipsum adksakdksadkaskdsa
+                                    Lorem ipsum adksakdksadkaskdsa
+                                </blockquote>
+                            </center>
+                            </div>
+                            <div class="col">
+                                <center>
+                                    <i class="bi bi-activity"></i>
+                                    <h4> Des esperience inouliables</h4>
+                                    <blockquote>
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                    </blockquote>
+                                </center>
+                            </div>
+                            <div class="col">
+                                <center>
+                                    <i class="bi bi-activity"></i>
+                                    <h4> La qualite avant trout</h4>
+                                    <blockquote>
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                    </blockquote>
+                                </center>
+                            </div>
+                            <div class="col">
+                                <center>
+                                    <i class="bi bi-activity"></i>
+                                    <h4> Un service client recompense</h4>
+                                    <blockquote>
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                        Lorem ipsum adksakdksadkaskdsa
+                                    </blockquote>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FINAL BLOCO ICONES-->
+                    <br>
+
+                    <!-- INICIO BLOCO DE CONSULTAS RECENTES-->
+                    <h3> Consultes recemment </h3>
+                    <div class="container">
+                        <div class="row">
+                            {% for product in controller_name %}
+                            <div class="col">
+                                <center>
+                            {% if product.name %}
+                            <img src="/images/{{ product.image }}" alt="NO IMAGE"/>
+                                <blockquote>
+                                    <h5> {{ product.name }} </h5>
+                                    <p>{{ product.description }}</p>
+                                </blockquote>
+                            </center>
+                            {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!-- FINAL DE CONSULTAS RECENTES-->
+
+                    <!-- INICIO BLOCO FAIXA-->
+
+                        <div class="ceinture">
+                            <h1> Rastez Flexible</h1>
+                            <blockquote class="ceinture-texte"> ASKDSAKDSAKDSAKDKSADKSADASKDKSA
+                                KDASKDSAKDSAKDSAKDSAKSDKA
+                                SAKDSAKDSKADKSAKDASKDSADKDSKA
+                                SAKDSAKDSAKD
+                            </blockquote>
+                        </div>
+                   
+                  </main>
+
+                  
+    {% block footer %}
+        {{ include('footer.html.twig') }}
+    {% endblock footer %}
+{% endblock %}

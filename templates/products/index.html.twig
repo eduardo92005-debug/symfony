@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductsController!{% endblock %}
+
+{% block body %}
+
+<div class="products-list">
+   {% for product in controller_name %}
+        <div>
+        {% if product.name %}
+        <figure>
+                <a href="products/{{ product.id }}">
+                <img src="/images/{{ product.image }}" alt="NO IMAGE"/>
+                </a>
+                <figcapiton>{{ product.description }} </figcapiton>
+        </figure>
+        {% endif %}
+        </div>
+   {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+
+{% block body %}
+     {% block nav %}
+             <nav class="navbar navbar-light justify-content-between" style="background-color: black;">
+                    <a id="logo" class="navbar-brand text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        Visit normandie
+                    </a>
+                    <form class="form-inline">
+                        <div class="navbar-nav flex-row">
+                            <a class="nav-item nav-link active text-white" href="#">FR</a>
+                            <a class="nav-item nav-link text-white" href="#"> 
+                                <i class="bi bi-currency-euro"></i> 
+                                EUR 
+                            </a>
+                            <a class="nav-item nav-link text-white" href="#">
+                                <i class="bi bi-question-circle"></i>
+                                Aide</a>
+                                <a>
+                            <a class="nav-item nav-link text-white" href="#">
+                                <i class="bi bi-ticket-detailed-fill"></i>
+                                Reservations
+                            </a>
+                            <a class="nav-item nav-link text-white" href="#">
+                                <i class="bi bi-person"></i>
+                                Compte</a>
+                          </div>
+                    </form>
+                  </nav>
+            {% endblock %}
+{% endblock %}

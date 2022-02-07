@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+.nav-item {
+    margin-left: 50px;
+}
+
+nav {
+    overflow: auto;
+}
+main {
+    display: flex!important;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    align-items: center;
+}
+.row {
+    align-items: flex-end;
+}
+
+img {
+    height:16vh;
+    width:80%;
+}
+.video {
+    height: 60vh;
+}
+video {
+    height: inherit;
+    width: 100%;
+    object-fit: fill;
+}
+.container {
+    width:100%;
+    overflow:visible;
+}
+
+#logo {
+    font-family: 'Berkshire Swash', cursive;
+}
+.ceinture{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    align-items:center;
+    background-color: aliceblue;
+}
+
+.ceinture-texte {
+    width: 20rem;
+}
+#ticket--icons {
+    transform: rotate(-40deg); 
+}
+
